@@ -21,6 +21,7 @@ public:
                 b = a->next;
             } else {
                 a->next = b->next;
+                delete b;
                 b = a->next;
             }
         }
