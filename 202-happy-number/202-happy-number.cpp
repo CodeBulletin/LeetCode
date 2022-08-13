@@ -4,6 +4,12 @@ public:
         int sum = n;
         unordered_set<int> set;
         do {
+           if(n==1 || n==7){
+               return true;
+           }
+           else if(n>1 && n<=9){
+               return false;
+           }
             n = sum;
             sum = 0;
             while(n > 0) {
