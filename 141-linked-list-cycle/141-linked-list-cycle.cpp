@@ -9,10 +9,10 @@
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
-        unordered_map<ListNode*, bool> m;
+        unordered_set<ListNode*> m;
         while(head != nullptr) {
             if (m.find(head) == m.end())
-                m.insert({head, true});
+                m.insert(head);
             else {
                 return true;
             }
