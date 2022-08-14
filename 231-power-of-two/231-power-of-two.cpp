@@ -5,6 +5,7 @@ public:
         while(n > 0) {
             if(n%2 != 0) i +=  1;
             n >>= 1;
+            if(i > 1) return false;
         }
         return i == 1;
     }
