@@ -1,11 +1,12 @@
 class Solution {
 public:
     int titleToNumber(string columnTitle) {
-        int n = columnTitle.size();
-        int k = 0;
-        for(int i = 0; i < n; i++) {
-            k += (columnTitle[i]-'A'+1) * pow(26, n-i-1);
+        int result = 0;
+        for(char c : columnTitle)
+        {
+            int d = c - 'A' + 1;
+            result = result * 26 + d;
         }
-        return k;
+        return result;
     }
 };
