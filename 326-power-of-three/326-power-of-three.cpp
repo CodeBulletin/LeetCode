@@ -1,6 +1,6 @@
 class Solution {
 public:
-    bool isPowerOfThree(int n) {
+    bool isPowerOfThree(int& n) {
         if(n == 1) return true;
         else if(n == 2 or n == 0) return false;
         while(n >= 3) {
