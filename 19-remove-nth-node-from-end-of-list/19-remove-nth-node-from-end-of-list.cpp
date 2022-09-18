@@ -10,7 +10,7 @@
  */
 class Solution {
 public:
-    ListNode* removeNthFromEnd(ListNode* head, int n) {
+    ListNode* removeNthFromEnd(ListNode*& head, int& n) {
         ListNode *back = head, *front = head;
         int diff = 0;
         while (front != nullptr) {
