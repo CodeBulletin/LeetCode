@@ -10,7 +10,7 @@
  */
 class Solution {
 public:
-    ListNode* removeElements(ListNode* head, int val) {
+    ListNode* removeElements(ListNode*& head, int& val) {
         head = new ListNode(0, head);
         ListNode *back = head, *front = head->next;
         if (!front) return nullptr;
