@@ -1,6 +1,6 @@
 class Solution {
 public:
-    bool containsNearbyDuplicate(vector<int>& nums, int k) {
+    bool containsNearbyDuplicate(vector<int> nums, int k) {
         auto set = unordered_set<int>();
         
         int ptr = 0;
