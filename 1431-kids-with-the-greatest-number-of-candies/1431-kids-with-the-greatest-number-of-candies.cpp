@@ -1,6 +1,6 @@
 class Solution {
 public:
-    vector<bool> kidsWithCandies(vector<int>& candies, int extraCandies) {
+    vector<bool> kidsWithCandies(vector<int> candies, int extraCandies) {
         int kid_with_max_candies = *max_element(candies.begin(), candies.end());
         vector<bool> vec(candies.size(), false);
         
