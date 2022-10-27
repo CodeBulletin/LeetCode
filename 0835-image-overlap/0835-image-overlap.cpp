@@ -8,8 +8,8 @@ public:
         for(int j = 0; j <= n; j++) {
             for(int i = 0; i <= n ; i++) {
                 int sum  = 0;
-                for(int k = 0; k < y; k++) {
-                    for(int l = 0; l < y; l++) {
+                for(int l = 0; l < y; l++) {
+                    for(int k = 0; k < y; k++) {
                         sum += a[(i + k) * x + j + l] * kernel[k * y + l];
                     }
                 }
