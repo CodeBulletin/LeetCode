@@ -13,7 +13,7 @@ public:
                         sum += a[(i + k) * x + j + l] * kernel[k * y + l];
                     }
                 }
-                if(sum >= max) max = sum;
+                if(sum > max) max = sum;
             }
         }
         
