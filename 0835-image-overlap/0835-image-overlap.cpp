@@ -5,11 +5,11 @@ public:
         
         int max = 0;
         
-        for(int j = 0; j <= n; j++) {
-            for(int i = 0; i <= n ; i++) {
+        for(int i = 0; i <= n ; i++) {
+            for(int j = 0; j <= n; j++) {
                 int sum  = 0;
-                for(int l = 0; l < y; l++) {
-                    for(int k = 0; k < y; k++) {
+                for(int k = 0; k < y; k++) {
+                    for(int l = 0; l < y; l++) {
                         sum += a[(i + k) * x + j + l] * kernel[k * y + l];
                     }
                 }
