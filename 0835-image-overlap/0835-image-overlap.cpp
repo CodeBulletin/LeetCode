@@ -1,7 +1,7 @@
 class Solution {
 public:
     int convolute(const vector<int>& a, const vector<int>& kernel, int x, int y) {
-        int n = x - y;
+        const int n = x - y;
         
         int max = 0;
         
