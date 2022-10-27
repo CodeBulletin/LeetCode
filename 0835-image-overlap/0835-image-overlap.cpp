@@ -5,8 +5,8 @@ public:
         
         int max = 0;
         
-        for(int i = 0; i <= n ; i++) {
-            for(int j = 0; j <= n; j++) {
+        for(int j = 0; j <= n; j++) {
+            for(int i = 0; i <= n ; i++) {
                 int sum  = 0;
                 for(int k = 0; k < y; k++) {
                     for(int l = 0; l < y; l++) {
