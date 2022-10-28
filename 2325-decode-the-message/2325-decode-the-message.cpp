@@ -1,6 +1,6 @@
 class Solution {
 public:
-    string decodeMessage(string key, string message) {
+    string decodeMessage(const string& key, const string& message) {
         unordered_map<char, char> keymap;
         int i = 0;
         for(const char& k : key) {
