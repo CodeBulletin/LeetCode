@@ -2,7 +2,7 @@ class Solution {
     static vector<vector<string>> mem;
     static int h;
 public:
-    void gen(vector<string>& ans, string& str, const int open, const int close, const int& max) {
+    void gen(vector<string>& ans, string& str, const int open, const int close, int& max) {
         if (str.size() == max * 2) {
             ans.push_back(str);
             return;
