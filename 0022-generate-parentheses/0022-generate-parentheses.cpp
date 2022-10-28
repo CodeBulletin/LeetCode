@@ -2,12 +2,11 @@ class Solution {
     static vector<vector<string>> mem;
     static int h;
 public:
-    void gen(vector<string>& ans, string& str, int open, int close, int max) {
+    void gen(vector<string>& ans, string& str, const int open, const int close, int& max) {
         if (str.size() == max * 2) {
             ans.push_back(str);
             return;
         }
-
         if (open < max) {
             str += '(';
             gen(ans, str, open+1, close, max);
