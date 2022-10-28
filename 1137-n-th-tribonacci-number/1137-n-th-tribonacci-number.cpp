@@ -10,7 +10,7 @@ public:
         for(int i = 0; i < n; i ++) {
             tmp2 = T3;
             tmp1 = T2;
-            T3 += T2 + T1;
+            T3 += tmp1 + T1;
             T1 = tmp1;
             T2 = tmp2;
         }
