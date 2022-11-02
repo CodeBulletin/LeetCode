@@ -17,15 +17,12 @@ public:
             while(n--) {
                 string curr = q.front();
                 q.pop();
-                
                 if(curr == end) {
                     return ans;
                 }
-                for(int i = 0; i < 8; i++)
-                {
+                for(int i = 0; i < 8; i++) {
                     char orig = curr[i]; 
-                    for(int j = 0; j < 4; j++) 
-                    {   
+                    for(int j = 0; j < 4; j++) {   
                         curr[i] = available[j];
                         if(dictionary.find(curr) != dictionary.end()) {
                             if(vis.find(curr) == vis.end()) {
