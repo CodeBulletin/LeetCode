@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int minMutation(string& start, string& end, vector<string>& bank) {
+    int minMutation(const string& start, const string& end, const vector<string>& bank) {
         int size = bank.size();
         unordered_set<string> dictionary(bank.begin(), bank.end());
         if(dictionary.find(end) == dictionary.end()) {
