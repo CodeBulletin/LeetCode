@@ -1,11 +1,8 @@
 class Solution {
 public:
-    int minMutation(string start, string end, vector<string>& bank) {
+    int minMutation(string& start, string& end, vector<string>& bank) {
         int size = bank.size();
-        unordered_set<string> dictionary;
-        for(int i = 0; i < size; i++) {
-            dictionary.insert(bank[i]);
-        }
+        unordered_set<string> dictionary(bank.begin(), bank.end());
         if(dictionary.find(end) == dictionary.end()) {
             return -1;
         }
